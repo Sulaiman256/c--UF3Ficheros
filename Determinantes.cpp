@@ -2,17 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 
-struct Determinante {
+   struct Determinante {
     int organizacion;
     int matriz[3][3];
     };
 
 int main(void) {
+
     void genera(struct Determinante *det);
     void muestra(struct Determinante *det);
     int calcula(struct Determinante *det);
 
-    struct Determinante det;
+    Determinante det;
 
     for (;;) {
         printf("Introduce el orden del determinante 2 o 3: ");
